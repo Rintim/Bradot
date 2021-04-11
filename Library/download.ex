@@ -60,17 +60,17 @@ defmodule Bradot.Download do
             {pid, ref, HTTPoison.get!(url, headers, ssl: [{:versions, [:"tlsv1.2", :"tlsv1.1", :tlsv1]}], recv_timeout: :infinity, stream_to: pid, async: :once)}
           end
 
-          handle = fn {pid, ref, resp} ->
+          handle = fn arg = {pid, ref, resp} ->
             send(pid, {self, ref, :run, resp})
             receive do
               {^pid, ^ref, {:ok, result}} ->
                 case result do
                   :halt ->
-                    {:halt, {pid, ref, resp}}
+                    {:halt, arg}
                   :next ->
-                    {[], {pid, ref, resp}}
+                    {[], arg}
                   chunk ->
-                    {[chunk], {pid, ref, resp}}
+                    {[chunk], arg}
                 end
             end
 
