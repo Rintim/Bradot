@@ -1,8 +1,8 @@
 # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 # This File if From Theopse (Self@theopse.org)
 # Licensed under BSD-3-Caluse
-# File:	video.ex (Bradot/Library/video.ex)
-# Content:	Bilibili's Video API
+# File:	download.ex (bradot/lib/download.ex)
+# Content:	General Download Library
 # Copyright (c) 2021 Theopse Organization All rights reserved
 # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 

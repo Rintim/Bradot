@@ -6,7 +6,7 @@ defmodule Bradot.MixProject do
       app: :bradot,
       version: "0.1.0",
       elixir: "~> 1.11",
-      elixirc_paths: ["lib", "Library", "Source"],
+      elixirc_paths: ["lib", "Library", "Source", "src"],
       start_permanent: Mix.env() == :prod,
       deps: deps()
     ]

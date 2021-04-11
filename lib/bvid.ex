@@ -1,7 +1,7 @@
 # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 # This File if From Theopse (Self@theopse.org)
 # Licensed under BSD-3-Caluse
-# File:	bvid.ex (Bradot/Library/bvid.ex)
+# File:	bvid.ex (bradot/lib/bvid.ex)
 # Content:	Bilibili's Bvid Parser
 # Copyright (c) 2021 Theopse Organization All rights reserved
 # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
